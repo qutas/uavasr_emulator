@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<launch>
+	<arg name="cam_name" default="camera"/>
+	<arg name="texture_name" default="da_vinci.png"/>
+
+	<node pkg="uavasr_emulator" type="uavasr_imagery_node" name="camera" clear_params="true" output="screen">
+		<!-- Operational Parameters -->
+		<param name="frame_id" value="$(arg cam_name)" type="str"/>
+
+		<param name="floor_texture" value="$(find uavasr_emulator)/resources/$(arg texture_name)" type="str"/>
+		<param name="floor_px_m" value="256" type="int"/>
+
+		<param name="framerate" value="10.0" type="double"/>
+		<param name="field_of_view" value="60.0" type="double"/>
+		<param name="resolution_width" value="640" type="int"/>
+		<param name="resolution_height" value="480" type="int"/>
+	</node>
+</launch>

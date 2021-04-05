@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<launch>
+	<arg name="uav_name" default="emulated_uav"/>
+
+	<node pkg="uavasr_emulator" type="uavasr_emulator_node" name="uavasr" clear_params="true" output="screen">
+		<!-- Operational Parameters -->
+		<param name="frame_id" value="map" type="str"/>
+		<param name="model_id" value="$(arg uav_name)" type="str"/>
+
+		<param name="start_armed" value="true" type="bool"/>
+		<param name="start_mode_offboard" value="true" type="bool"/>
+
+		<param name="update_rate_pose" value="50.0" type="double"/>
+		<param name="update_rate_battery" value="1.0" type="double"/>
+		<param name="update_rate_state" value="1.0" type="double"/>
+	</node>
+</launch>

@@ -2,7 +2,7 @@
 Unmanned Aerial Vechicle Artic Search and Rescue Emulator. Small ROS publisher to output dummy data in the form of images, pose messages, and sensor readings.
 
 ## Installing Dependencies
-Please download and install using the instructions for the [QUT Flight Stack](https://github.com/qutas/info/wiki/UAV-Setup-Guides-(2021)#the-qutas-flight-stack)
+Please download and install using the instructions for the [QUT Flight Stack](https://github.com/qutas/info/wiki/UAV-Setup-Guides-(2023)#the-qutas-flight-stack)
 
 ## Running
 

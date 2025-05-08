@@ -2,7 +2,7 @@
 Unmanned Aerial Vechicle Artic Search and Rescue Emulator. Small ROS publisher to output dummy data in the form of images, pose messages, and sensor readings.
 
 ## Installing Dependencies
-Please download and install using the instructions for the [QUT Flight Stack](https://github.com/qutas/info/wiki/UAV-Setup-Guides-(2023)#the-qutas-flight-stack)
+Please download and install using the instructions for the [QUT Flight Stack](https://github.com/qutas/info/wiki/UAV-Setup-Guides-(2025)#the-qutas-flight-stack), The uavasr_emulator emulator.launch do not launch the Spar node, which is needed for you to command the emulator to take off, land, etc. Check spar_node spar_uavasr.launch for a full launch instead.
 
 ## Running
 
